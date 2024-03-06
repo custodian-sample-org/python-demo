@@ -8,3 +8,9 @@ patterns:
       language python
 
       `super().__init__($_)` => `# super().__init__()`
+  - name: no_class
+    level: warn
+    body: |
+      language python
+
+      `class $_: $_`
